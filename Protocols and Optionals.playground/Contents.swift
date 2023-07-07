@@ -81,3 +81,54 @@ if let tmp2 = str2{
 else{
     print( "empty")
 }
+
+func albumReleased(year: Int) -> String? {
+    switch year {
+    case 2006: return "Taylor Swift"
+    case 2008: return "Fearless"
+    case 2010: return "Speak Now"
+    case 2012: return "Red"
+    case 2014: return "1989"
+    default: return nil
+    }
+}
+class Album {
+    var name: String
+
+    init(name: String) {
+        self.name = name
+    }
+}
+
+class StudioAlbum: Album {
+    var studio: String
+
+    init(name: String, studio: String) {
+        self.studio = studio
+        super.init(name: name)
+    }
+}
+
+class LiveAlbum: Album {
+    var location: String
+
+    init(name: String, location: String) {
+        self.location = location
+        super.init(name: name)
+    }
+}
+
+let album = albumReleased(year: 2006) ?? "unknown"
+print("The album is \(album)")
+let album2 = albumReleased(year: 2007) ?? "unknown"
+print("The album is \(album2)")
+
+var taylorSwift = StudioAlbum(name: "Taylor Swift", studio: "The Castles Studios")
+var fearless = StudioAlbum(name: "Speak Now", studio: "Aimeeland Studio")
+
+var allAlbums: [Album] = [taylorSwift, fearless]
+
+for album in allAlbums {
+    let studioAlbum = album as! StudioAlbum
+    print(studioAlbum.studio)
+}
