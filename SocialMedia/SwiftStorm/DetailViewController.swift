@@ -41,7 +41,7 @@ class DetailViewController: UIViewController {
             return
         }
         //without this it will crash on ipad
-        let vc = UIActivityViewController(activityItems: [image], applicationActivities: [])
+        let vc = UIActivityViewController(activityItems: [image, selectedImage!], applicationActivities: [])
         vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
             //show our finished UI v controller
         present(vc, animated: true)

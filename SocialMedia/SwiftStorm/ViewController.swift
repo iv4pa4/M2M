@@ -14,6 +14,9 @@ class ViewController: UITableViewController {
         super.viewDidLoad()
         
         title = "Storm Viewer"
+        //navigationItem.largeTitleDisplayMode = .never
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector (shareTapped))
         navigationController?.navigationBar.prefersLargeTitles = true
         //this lets us to work with tha file system
         let fm = FileManager.default
@@ -45,6 +48,14 @@ class ViewController: UITableViewController {
             vc.selectedImage = pictures[indexPath.row]
             navigationController?.pushViewController(vc, animated: true)
         }
+    }
+    
+    @objc func shareTapped(){
+        
+        let vc = UIActivityViewController(activityItems: [self], applicationActivities: [])
+        vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+            //show our finished UI v controller
+        present(vc, animated: true)
     }
 
 }
