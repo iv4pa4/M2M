@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet var button2: UIButton!
     @IBOutlet var button3: UIButton!
     
+    @IBOutlet var scoreButton: UIButton!
+    
     
     var countries = [String]()
     var score = 0
@@ -52,10 +54,13 @@ class ViewController: UIViewController {
         button3.setImage(UIImage(named: countries[2]), for: .normal)
         var str: String?
         str = countries[correctAnswer].uppercased()
+        
+        /*
          let scoreText = UITextView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
         scoreText.text = String(score)
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: scoreText)
         self.navigationItem.title = str
+         */
         
         if howManyDisplayedQuestions >= 10 {
             displayed10Questions()
@@ -80,12 +85,11 @@ Your score is \(score)
 """
             )
         }
-        /*
-        let ac = UIAlertController(title: title, message: "Your score is \(score)", preferredStyle: .alert)
+    }
+    
+    
+    @IBAction func scoreButtonTapped(_ sender: UIButton) {
         
-        ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestions))
-        
-        present(ac, animated: true) */
     }
     
     func alertMessage(title: String, message: String){

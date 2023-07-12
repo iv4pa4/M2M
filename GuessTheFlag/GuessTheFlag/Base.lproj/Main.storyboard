@@ -57,11 +57,24 @@
                             <constraint firstItem="2Q4-YX-b5P" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wzf-kY-Ejl"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="e9p-b2-ekV"/>
+                    <navigationItem key="navigationItem" id="e9p-b2-ekV">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="Gic-k4-eIc">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Yf6-Jp-zqQ">
+                                <rect key="frame" x="16" y="5" width="87" height="34.333333333333336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Score"/>
+                            </button>
+                            <connections>
+                                <action selector="scoreButtonTapped:" destination="BYZ-38-t0r" id="KRo-Lx-oM5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="button1" destination="q6x-dK-5xS" id="Q52-Oz-He5"/>
                         <outlet property="button2" destination="ov3-zX-Jrw" id="rCE-T5-wY7"/>
                         <outlet property="button3" destination="2Q4-YX-b5P" id="NTZ-wi-IX1"/>
+                        <outlet property="scoreButton" destination="Yf6-Jp-zqQ" id="lMo-y5-vC4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
