@@ -91,7 +91,7 @@
                         <outlet property="button1" destination="q6x-dK-5xS" id="Q52-Oz-He5"/>
                         <outlet property="button2" destination="ov3-zX-Jrw" id="rCE-T5-wY7"/>
                         <outlet property="button3" destination="2Q4-YX-b5P" id="NTZ-wi-IX1"/>
-                        <outlet property="scoreButton" destination="Yf6-Jp-zqQ" id="lMo-y5-vC4"/>
+                        <outlet property="scoreButton" destination="Yf6-Jp-zqQ" id="n5g-Ne-tlr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

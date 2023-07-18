@@ -54,7 +54,7 @@ class ViewController: UIViewController {
         button3.setImage(UIImage(named: countries[2]), for: .normal)
         var str: String?
         str = countries[correctAnswer].uppercased()
-        
+        title = str;
         /*
          let scoreText = UITextView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
         scoreText.text = String(score)

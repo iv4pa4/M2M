@@ -18,6 +18,38 @@
             endingLineNumber = "74"
             landmarkName = "buttonTapped(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CC0D40E2-0F82-40E4-93D3-E0541A8DA3EB - a66b01b5796c5efb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GuessTheFlag.ViewController.buttonTapped(__C.UIButton) -&gt; ()"
+                  moduleName = "GuessTheFlag"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivaylapanayotova/Desktop/M2M/M2M/GuessTheFlag%20copy/GuessTheFlag/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "216">
+               </Location>
+               <Location
+                  uuid = "CC0D40E2-0F82-40E4-93D3-E0541A8DA3EB - a66b01b5796c5efb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GuessTheFlag.ViewController.buttonTapped(__C.UIButton) -&gt; ()"
+                  moduleName = "GuessTheFlag"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivaylapanayotova/Desktop/M2M/M2M/GuessTheFlag%20copy/GuessTheFlag/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

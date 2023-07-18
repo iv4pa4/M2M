@@ -12,7 +12,6 @@ class ViewController: UIViewController {
     @IBOutlet var button1: UIButton!
     @IBOutlet var button2: UIButton!
     @IBOutlet var button3: UIButton!
-    
     @IBOutlet var scoreButton: UIButton!
     
     
@@ -54,6 +53,7 @@ class ViewController: UIViewController {
         button3.setImage(UIImage(named: countries[2]), for: .normal)
         var str: String?
         str = countries[correctAnswer].uppercased()
+        title = str
         
         /*
          let scoreText = UITextView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
@@ -87,10 +87,6 @@ Your score is \(score)
         }
     }
     
-    
-    @IBAction func scoreButtonTapped(_ sender: UIButton) {
-        
-    }
     
     func alertMessage(title: String, message: String){
         let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
